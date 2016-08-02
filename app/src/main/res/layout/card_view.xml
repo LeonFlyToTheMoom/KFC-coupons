@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:weightSum="1"
+    android:id="@+id/mian_card_layout"
+    android:background="@drawable/kfc_card_gradient"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp">
+
+    <ImageView
+        android:id="@+id/card_imageView"
+        android:layout_width="140dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+       />
+
+    <TextView
+        android:id="@+id/no_textView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="C16"
+        android:textColor="#0a8304"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/card_imageView"
+        android:layout_toRightOf="@+id/card_imageView"
+        android:layout_toEndOf="@+id/card_imageView"
+        android:layout_marginTop="5dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/no_textView"
+        android:orientation="vertical"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/content_textView"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="BBQ手撕猪肉堡"
+            android:textColor="@color/kef_text"
+            android:lines="3"
+            android:ellipsize="end"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/date_textView"
+        android:layout_alignLeft="@+id/date_textView"
+        android:layout_alignStart="@+id/date_textView"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:id="@+id/price_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/kef_price"
+            android:textSize="20sp"
+            android:layout_above="@+id/date_textView"
+            android:layout_toRightOf="@+id/no_textView"
+            android:layout_toEndOf="@+id/no_textView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/kef_text"
+            android:layout_alignBottom="@+id/buy_button"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/kfc_buy"
+        android:text="购买"
+        android:textColor="#fff"
+        android:layout_above="@+id/date_textView"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+    <TextView
+        android:id="@+id/date_textView"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="有效日期6月30日"
+        android:textColor="@color/kef_date"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/no_textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="kfc_no">#0c9c18</color>
+    <color name="kef_text">#063ef9</color>
+    <color name="kef_price">#ed9609</color>
+    <color name="kef_date">#a19c9c</color>
+    <color name="kfc_card_red">#b93e3e</color>
+    0xFF CC CC CC;
+</resources>

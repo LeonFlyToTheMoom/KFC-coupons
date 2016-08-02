@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:weightSum="1"
+    android:id="@+id/mian_card_layout"
+    android:background="@drawable/kfc_card_gradient"
+    android:layout_marginLeft="13dp"
+    android:layout_marginRight="13dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/card_imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.618"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.618"
+            android:layout_toRightOf="@+id/no_textView"
+            android:orientation="horizontal"
+            android:id="@+id/relativeLayout"
+            android:background="#e4960f">
+            <TextView
+                android:id="@+id/content_textView"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:text="BBQ手撕猪肉堡"
+                android:textColor="@color/kef_text"
+                android:lines="3"
+                android:ellipsize="end"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.618">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C16"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="101dp"
+                    android:layout_marginStart="101dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout">
+                <TextView
+                    android:id="@+id/price_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="@color/kef_price"
+                    android:textSize="20sp"
+                    android:layout_above="@+id/date_textView"
+                    android:layout_toRightOf="@+id/no_textView"
+                    android:layout_toEndOf="@+id/no_textView" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:textColor="@color/kef_text"
+                    android:layout_alignBottom="@+id/buy_button"
+                    android:layout_centerHorizontal="true" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buy_button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:background="@drawable/kfc_buy"
+                android:text="购买"
+                android:textColor="#fff"
+                android:layout_above="@+id/date_textView"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+            <TextView
+                android:id="@+id/date_textView"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="有效日期6月30日"
+                android:textColor="@color/kef_date"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/no_textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

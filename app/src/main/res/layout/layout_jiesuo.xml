@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/back_ground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78e9e3e3"
+    android:gravity="center">
+<LinearLayout
+    android:layout_width="200dp"
+    android:layout_height="220dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="170dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hongbao"
+            android:layout_gravity="top"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/xx_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xx"
+            android:layout_marginLeft="165dp"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/jiesuo_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#f70404"
+        android:text="解锁"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#5c5b5b"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/word"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注:解锁功能后终身使用，无广告，不需要再次解锁"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.youxi.kfc"
+        minSdkVersion 16
+        targetSdkVersion 15
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile files('libs/AppOffer_2.4.6.jar')
+    compile files('libs/GDTUnionSDK.4.8.526.min.jar')
+    //retrofit
+    compile ('com.squareup.retrofit2:retrofit:2.1.0') {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    //rxjava
+    compile 'io.reactivex:rxjava:1.1.6'
+    //jsoup
+    compile 'org.jsoup:jsoup:1.9.2'
+    //retrofit支持rxjava
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //SQLbrite
+    compile 'com.squareup.sqlbrite:sqlbrite:0.7.0'
+    //支持android线程
+    compile 'io.reactivex:rxandroid:1.0.1'
+}

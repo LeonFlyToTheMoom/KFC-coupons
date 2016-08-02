@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">肯德基优惠券免打印版</string>
+    <string name="app_name2">广点通联盟SDKDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">slogan</string>
+    <string name="action_splash">splash</string>
+    <string name="title_activity_maindemo">广点通：结盟而赢</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="gdtslogan">GDTslogan</string>
+    <string name="title_activity_banner">广点通：横幅广告</string>
+    <string name="title_activity_interstitial_ad">广点通：插屏广告</string>
+    <string name="title_nativead">广点通：原生广告</string>
+    <string name="word">点击“解锁”》随意下载一款应用》然后删除即可！</string>
+</resources>
